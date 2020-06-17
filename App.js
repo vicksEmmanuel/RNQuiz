@@ -28,7 +28,7 @@ import {TabScreenData} from './dummyData/LinkedInData';
 export default class App extends Component {
   render() {
     return (
-      <LinkedInTabScreen data={TabScreenData} locked={true} />
+      <LinkedInTabScreen data={TabScreenData} locked={false} />
     )
   }
 }
