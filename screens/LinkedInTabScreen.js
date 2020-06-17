@@ -1,5 +1,5 @@
 import React, {  Component } from "react";
-import { View, SafeAreaView, Text, StatusBar, Dimensions, Image } from "react-native";
+import { View, SafeAreaView, Text, StatusBar, Dimensions } from "react-native";
 import { Tab, Tabs } from "native-base";
 import { Pagination } from "react-native-snap-carousel";
 import Frame2 from './Frame2';
