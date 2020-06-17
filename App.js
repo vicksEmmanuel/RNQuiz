@@ -23,12 +23,11 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import LinkedInTabScreen from './screens/LinkedInTabScreen';
-import {TabScreenData} from './dummyData/LinkedInData';
 
 export default class App extends Component {
   render() {
     return (
-      <LinkedInTabScreen data={TabScreenData} locked={false} />
+      <LinkedInTabScreen locked={false} />
     )
   }
 }

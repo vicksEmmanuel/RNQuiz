@@ -6,7 +6,7 @@ export const TabScreenData = [
         bodyTextTag: 'LinkedIn Job Search',
         buttonText: 'Sign Up with LinkedIn',
         finalButton: false,
-        image: images.linkedinSvg,
+        image: images.linkedinPng1,
     },
     {
         screen: '2',
@@ -14,7 +14,7 @@ export const TabScreenData = [
         bodyTextTag: 'LinkedIn Job Search',
         buttonText: 'Sign Up with LinkedIn',
         finalButton: false,
-        image: images.linkedinSvg,
+        image: images.linkedinPng2,
     },
     {
         screen: '3',
@@ -22,7 +22,7 @@ export const TabScreenData = [
         bodyTextTag: 'LinkedIn Job Search',
         buttonText: 'Sign Up with LinkedIn',
         finalButton: false,
-        image: images.linkedinSvg,
+        image: images.linkedinPng3,
     },
     {
         screen: '4',
@@ -30,7 +30,7 @@ export const TabScreenData = [
         bodyTextTag: 'LinkedIn Job Search',
         buttonText: 'Sign Up with LinkedIn',
         finalButton: false,
-        image: images.linkedinSvg,
+        image: images.linkedinPng4,
     },
     {
         screen: '5',
@@ -38,6 +38,6 @@ export const TabScreenData = [
         bodyTextTag: 'LinkedIn Job Search',
         buttonText: 'Sign Up with LinkedIn',
         finalButton: false,
-        image: images.linkedinSvg,
+        image: images.linkedinPng5,
     },
 ]

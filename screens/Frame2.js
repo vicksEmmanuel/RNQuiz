@@ -15,8 +15,8 @@ const Frame2 = ({
     pageIndicator
 }) => {
     return (
-        <View style={{flex: 1, height, paddingTop: 30}}>
-            <ImageBackground source={image} style={{flex: 1, height, resizeMode: "cover", justifyContent: "center"}}>
+        <View style={{flex: 1, height}}>
+            <ImageBackground source={image} style={{flex: 1, width, height, resizeMode: "cover", justifyContent: "center"}}>
                 <View style={{flex: 0.6, alignItems: 'center', justifyContent: 'center'}}>
                     <Text
                         style={{
@@ -42,7 +42,9 @@ const Frame2 = ({
                     >{bodyTextTag}</Text>
                 </View>
                 <View style={{flex: 0.1, alignItems: 'center', justifyContent: 'center'}}>
-                    <Button style={{backgroundColor: '#0E76A8', width: '60%',paddingHorizontal: 10}}>
+                    <Button 
+                        onPress={() => {alert('clicked')}}
+                        style={{backgroundColor: '#0E76A8', width: '60%',paddingHorizontal: 10}}>
                         <View style={{backgroundColor: 'white', padding: 5, borderRadius: 2, marginRight: 5}}>
                             <Image source={images.linkedinImage} style={{width: 15, height: 15}} />
                         </View>

@@ -3,6 +3,7 @@ import { View, SafeAreaView, Text, StatusBar, Dimensions, Image } from "react-na
 import { Tab, Tabs } from "native-base";
 import { Pagination } from "react-native-snap-carousel";
 import Frame2 from './Frame2';
+import {TabScreenData} from '../dummyData/LinkedInData';
 
 const width = Dimensions.get('screen').width;
 const height = Dimensions.get('screen').height;
@@ -12,14 +13,13 @@ export default class LinkedInTabScreen extends Component {
         super(props);
         this.state = {
             currentIndex: 0,
-            currentIndexData: props.data[0]
+            currentIndexData: TabScreenData[0]
         }
     }
     onTabChange({i}) {
         this.setState({
-            ...this.state,
             currentIndex: i,
-            currentIndexData: this.props.data[i]
+            currentIndexData: TabScreenData[i]
         })
     }
 
@@ -31,12 +31,12 @@ export default class LinkedInTabScreen extends Component {
                     <View style={{width, height, backgroundColor: 'white', alignItems: 'center'}}>
                         <Tabs
                                 tabContainerStyle={{ display: "none" }}
-                                onChangeTab={this.onTabChange}
+                                onChangeTab={this.onTabChange.bind(this)}
                                 page={this.state.currentIndex}
                                 locked={this.props.locked}
                             >
                                 {
-                                    this.props.data.map(({
+                                    TabScreenData.map(({
                                         screen,
                                         bodyText,
                                         bodyTextTag,
@@ -54,7 +54,7 @@ export default class LinkedInTabScreen extends Component {
                                                     image={image}
                                                     pageIndicator={
                                                         <Pagination
-                                                            dotsLength={this.props.data.length}
+                                                            dotsLength={TabScreenData.length}
                                                             activeDotIndex={this.state.currentIndex}
                                                             dotContainerStyle={{
                                                                 backgroundColor: "transparent",
